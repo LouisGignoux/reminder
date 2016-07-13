@@ -1,4 +1,4 @@
-Quant une branche ne peut pas être mergée automatiquement :
+Quand une branche ne peut pas être mergée automatiquement :
 
 ```bash
 git pull --rebase origin/master
