@@ -14,6 +14,8 @@ After staring motionless at your screen for 5 seconds, your first instinct is
 to revert the commit, but it is not enough. That thing has to disappear
 completely.
 
+#Bien expliquer la différence entre revert et reset
+
 ```bash
 git reset HEAD~
 ```
