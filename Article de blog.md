@@ -13,12 +13,15 @@ else
 After staring motionless at your screen for 5 seconds, your first instinct is
 to revert the commit, but it is not enough. That thing has to disappear
 completely.
-
-#Bien expliquer la différence entre revert et reset
+The reason to prefer ```git reset``` in this situation is that a revert creates an opposite of your commit, making it still visible, why a reset deletes it completely.
 
 ```bash
 git reset HEAD~
 ```
+
+This command comes with two options :
+```reset --soft``` will allow you to add changes to the precedents commmits (the changes you already have done will stay commited)
+```reset --hard``` will delete the commits forever
 
 # TODO
 
@@ -59,22 +62,6 @@ G   H   I   J
 Try to access every commit in the tree and check the solution below !
 (A is HEAD)
 
-# Ici je voudrais mettre une balise spoiler
-```bash
-A =      = A^0
-B = A^   = A^1     = A~1
-C = A^2  = A^2
-D = A^^  = A^1^1   = A~2
-E = B^2  = A^^2
-F = B^3  = A^^3
-G = A^^^ = A^1^1^1 = A~3
-H = D^2  = B^^2    = A^^^2  = A~2^2
-I = F^   = B^3^    = A^^3^
-J = F^2  = B^3^2   = A^^3^2
-```
-
-# TODO
-
 But what if you destroyed the wrong commit by mistake, well you have a choice
 between smashing your head on your keyboard, blaming the weather and your
 trackpad, or use :
@@ -89,6 +76,19 @@ You will retrieve the commit you destroyed (its sha identifier to be more specif
 git checkout -b newBranch shaToRecover
 ```
 
-
 ```bash
+```
+
+Solution of the exercise :
+```bash
+A =      = A^0
+B = A^   = A^1     = A~1
+C = A^2  = A^2
+D = A^^  = A^1^1   = A~2
+E = B^2  = A^^2
+F = B^3  = A^^3
+G = A^^^ = A^1^1^1 = A~3
+H = D^2  = B^^2    = A^^^2  = A~2^2
+I = F^   = B^3^    = A^^3^
+J = F^2  = B^3^2   = A^^3^2
 ```
