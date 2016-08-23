@@ -76,9 +76,6 @@ You will retrieve the commit you destroyed (its sha identifier to be more specif
 git checkout -b newBranch shaToRecover
 ```
 
-```bash
-```
-
 Solution of the exercise :
 ```bash
 A =      = A^0
