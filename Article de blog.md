@@ -23,11 +23,13 @@ This command comes with two options :
 ```reset --soft``` will allow you to add changes to the precedents commmits (the changes you already have done will stay commited)
 ```reset --hard``` will delete the commits forever
 
-# TODO
+PARLER AUSSI DU REBASE INTERACTIF
 
 After a few trials, you've become quite fluent with ```git reset HEAD~```,
-but you've encountered another problem : what if you want to access to the
+but you've encountered another problem: what if you want to access to the
 second parent of a commit ?
+
+EXPLIQUER LA NOTION DE PARENT (DANS LES MERGE PAR EXEMPLE)
 
 ```bash
 B     C
@@ -45,7 +47,7 @@ git reset HEAD^2
 With this you will access the second parent of the last commit
 
 And the most beautiful thing in all that ? You can make combinations with ^
-and ~ to access any commit you want in any tree :
+and ~ to access any commit you want in any tree:
 
 ```bash
 G   H   I   J
@@ -70,11 +72,15 @@ trackpad, or use :
 git reflog
 ```
 
+PLUS DE DETAILS !!!
+
 You will retrieve the commit you destroyed (its sha identifier to be more specific), and you will be able to recover it like this :
 
 ```bash
 git checkout -b newBranch shaToRecover
 ```
+
+SE RENSEIGNER SUR LA BALISE SPOILER
 
 Solution of the exercise :
 ```bash
