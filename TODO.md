@@ -8,3 +8,4 @@ React, redux, immutable (part 1 & 2) :
  - http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-2/
 Git bisect : http://webchick.net/node/99
 Git clean : https://www.atlassian.com/git/tutorials/undoing-changes/git-clean/
+Templates de PR : https://www.theodo.fr/blog/2016/05/increase-team-productivity-with-github-templates/
